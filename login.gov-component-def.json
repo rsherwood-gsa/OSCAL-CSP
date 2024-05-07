@@ -1,0 +1,40 @@
+{
+    "$schema": "https://github.com/usnistgov/OSCAL/releases/download/v1.1.2/oscal_component_schema.json",
+    "component-definition": {
+        "uuid": "655A6431-8C60-4686-B33B-2C7B35ABAD79",
+        "metadata": {
+            "title": "Login.gov Component Definition",
+            "last-modified": "2024-05-07T00:00:00.00Z",
+            "version": "0.1-demo",
+            "oscal-version": "1.1.2"
+        },
+        "components": [
+            {
+                "uuid": "F7744FC9-B295-460A-8B19-2A46FDDA327F",
+                "type": "software",
+                "title": "foreman",
+                "description": "Web Server providing access to the IDP",
+                "props": [
+                    {
+                        "ns": "http://csrc.nist.gov/ns/oscal",
+                        "name": "asset-type",
+                        "value": "web-server"
+                    }
+                ]
+            }
+        ],
+        "capabilities": [
+            {
+                "uuid": "1B75D4CE-1E82-4AD8-A3AB-31ECF3DE810E",
+                "name": "Login.gov IDP",
+                "description": "Identity Provider capability for Login.gov",
+                "incorporates-components": [
+                    {
+                        "component-uuid": "F7744FC9-B295-460A-8B19-2A46FDDA327F",
+                        "description": "The configuration file defining the password policy for the IDP"
+                    }
+                ]
+            }
+        ]
+    }
+}
