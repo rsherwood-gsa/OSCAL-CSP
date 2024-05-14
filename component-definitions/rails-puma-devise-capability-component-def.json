@@ -1,0 +1,37 @@
+{
+    "$schema": "https://github.com/usnistgov/OSCAL/releases/download/v1.1.2/oscal_component_schema.json",
+    "component-definition": {
+        "uuid": "655A6431-8C60-4686-B33B-2C7B35ABAD79",
+        "metadata": {
+            "title": "Rails Component Definition",
+            "last-modified": "2024-05-07T00:00:00.00Z",
+            "version": "0.1-demo",
+            "oscal-version": "1.1.2"
+        },
+        "import-component-definitions": [
+            {
+                "href": "rails-devise-module-component-def.json"
+            },
+            {
+                "href": "rails-puma-component-def.json"
+            }
+        ],
+        "capabilities": [
+            {
+                "uuid": "132C0573-2439-4ED8-BD73-D870DCC89779",
+                "name": "Vanilla Rails Implementation",
+                "description": "An implementation of Ruby on Rails that does not include any third party compoenents",
+                "incorporates-components": [
+                    {
+                        "component-uuid": "76ECE90B-E3CD-40C7-9448-80BDD001CA2E",
+                        "description": "Ruby on Rails puma web server component."
+                    },
+                    {
+                        "component-uuid": "76ECE90B-E3CD-40C7-9448-80BDD001CA2E",
+                        "description": "Devise: Ruby on Rails authentication module"
+                    }
+                ]
+            }
+        ]
+    }
+}

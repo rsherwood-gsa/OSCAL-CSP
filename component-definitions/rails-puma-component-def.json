@@ -1,0 +1,84 @@
+{
+    "$schema": "https://github.com/usnistgov/OSCAL/releases/download/v1.1.2/oscal_component_schema.json",
+    "component-definition": {
+        "uuid": "655A6431-8C60-4686-B33B-2C7B35ABAD79",
+        "metadata": {
+            "title": "Rails Component Definition",
+            "last-modified": "2024-05-07T00:00:00.00Z",
+            "version": "0.1-demo",
+            "oscal-version": "1.1.2"
+        },
+        "components": [
+            {
+                "uuid": "76ECE90B-E3CD-40C7-9448-80BDD001CA2E",
+                "type": "software",
+                "title": "puma",
+                "description": "Web Server providing access to the IDP",
+                "purpose": "enable access to the server via web browser",
+                "props": [
+                    {
+                        "ns": "http://csrc.nist.gov/ns/oscal",
+                        "name": "asset-type",
+                        "value": "web-server"
+                    },
+                    {
+                        "ns": "http://csrc.nist.gov/ns/oscal",
+                        "name": "public",
+                        "value": "yes"
+                    },
+                    {
+                        "ns": "http://csrc.nist.gov/ns/oscal",
+                        "name": "virtual",
+                        "value": "yes"
+                    },
+                    {
+                        "ns": "http://csrc.nist.gov/ns/oscal",
+                        "name": "implementation-point",
+                        "value": "internal"
+                    }
+                ],
+                "protocols": [
+                    {
+                        "name": "http",
+                        "port-ranges": [
+                            {
+                                "start": 80,
+                                "end": 80
+                            }
+                        ]
+                    },
+                    {
+                        "name": "https",
+                        "port-ranges": [
+                            {
+                                "start": 443,
+                                "end": 443
+                            }
+                        ]
+                    }
+                ],
+                "control-implementations": [
+                    {
+                        "uuid": "5CA7C326-0E1E-4EAA-893D-D86F931F36E0",
+                        "source": "https://pages.nist.gov/REPLACE-WITH-OSCAL-IO-REFERENCE",
+                        "description": "Implementation of 800-63B requirements by the Rails Web Server.",
+                        "implemented-requirements": [
+                            {
+                                "uuid": "148695C5-9935-4C7A-AFD7-469CE28402B8",
+                                "control-id": "ms-13",
+                                "description": "Login.gov implements requirement ms-13 as documented in the statements below",
+                                "statements": [
+                                    {
+                                        "uuid": "98289486-DD7D-40B4-A0AD-D0E81F32E656",
+                                        "statement-id": "ms-13_smt",
+                                        "description": "The server may be started with HTTPS=on in order to provide TLS"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
