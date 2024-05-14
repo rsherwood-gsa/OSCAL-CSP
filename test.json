@@ -1,6 +1,0 @@
-{
-    "$schema": "https://github.com/usnistgov/OSCAL/releases/download/v1.1.2/oscal_ssp_schema.json",
-    "system-security-plan": {
-        "uuid": "UUID"
-    }
- }
