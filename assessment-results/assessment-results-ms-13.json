@@ -1,0 +1,57 @@
+{
+    "uuid": "750e2f79-7a53-4e1a-83c8-528319182a68",
+    "metadata": {
+        "title": "Test Result for login.gov.",
+        "last_modified": "2024-06-03T17:48:55+00:00",
+        "version": "2024-06-03T17:48:55+00:00",
+        "oscal_version": "1.1.2"
+    },
+    "import_ap": {
+        "href": "./exported_ap.json"
+    },
+    "results": [
+        {
+            "uuid": "a4cc072d-3384-49f5-bd2c-8768ab2699d7",
+            "title": "confirms that TLS is configured on the server",
+            "description": "confirms that TLS is configured on the server",
+            "start": "2024-06-03T17:48:55+00:00",
+            "reviewed_controls": {
+                "control_selections": [
+                    {
+                        "include_controls": [
+                            {
+                                "control_id": "ms-13"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "observations": [
+                {
+                    "uuid": "5acd4918-b7c2-4fa2-b3ff-c1acb213da76",
+                    "title": "confirms that TLS is configured on the server",
+                    "description": "confirms that TLS is configured on the server",
+                    "methods": [
+                        "TEST"
+                    ],
+                    "collected": "2024-06-03T17:48:55+00:00"
+                }
+            ],
+            "findings": [
+                {
+                    "uuid": "c552e019-f21b-4ae3-a984-1e4eecaed77c",
+                    "title": "Automated Test Outcome",
+                    "description": "confirms that TLS is configured on the server",
+                    "target": {
+                        "type": "statement-id",
+                        "target_id": "ms-13_smt",
+                        "status": {
+                            "state": "not-satisfied",
+                            "reason": "fail"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
