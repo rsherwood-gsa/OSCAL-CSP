@@ -55,10 +55,10 @@
                     }
                 },
                 {
-                    "uuid": "UUID",
+                    "uuid": "76ECE90B-E3CD-40C7-9448-80BDD001CA2E",
                     "type": "software",
-                    "title": "Logging Server",
-                    "description": "description...",
+                    "title": "puma",
+                    "description": "Web Server providing access to the IDP",
                     "status": {
                         "state": "operational"
                     }
@@ -82,7 +82,6 @@
                         }
                     ],
                     "by-components": [
-
                     ]
                 }       
             ]        
