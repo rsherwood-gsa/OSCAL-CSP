@@ -1,7 +1,7 @@
 {
     "$schema": "https://github.com/usnistgov/OSCAL/releases/download/v1.1.2/oscal_ssp_schema.json",
     "system-security-plan": {
-        "uuid": "UUID",
+        "uuid": "7b13072a-c8ce-4324-b5db-58e862fcc7f1",
         "metadata": {
             "title": "OSCAL for CSPs POC System Security Plan",
             "published": "2024-05-08T13:57:28.355446-04:00",
@@ -25,7 +25,7 @@
                 "information-types": [
                     {
                         "title": "System title",
-                        "description": "This system...",
+                        "description": "This system..."
                     }
                 ]
             },
@@ -40,16 +40,16 @@
         "system-implementation": {
             "users": [
                 {
-                    "uuid": "UUID",
+                    "uuid": "8bcbd5ab-238f-4d65-b876-dee95982d768",
                     "title": "Audit Team"
-                },
+                }
             ],
             "components": [
                 {
-                    "uuid": "UUID",
-                    "type": "this-system",
-                    "title": "This System",
-                    "description": "The system described by this SSP.",
+                    "uuid": "4459bba1-a93e-46f2-97ed-03b198a1071f",
+                    "type": "software",
+                    "title": "devise",
+                    "description": "Devise is a flexible authentication solution for Rails based on Warden.",
                     "status": {
                         "state": "operational"
                     }
@@ -66,11 +66,24 @@
             ]
         },
         "control-implementation": {
-            "description": "This is the control implementation for the system.",
+            "uuid": "2236c549-e6c3-4a85-b06e-2415e4f0b6c9",
+            "source": "https://pages.nist.gov/REPLACE-WITH-OSCAL-IO-REFERENCE",
+            "description": "Implementation of 800-63B requirements with the Rails Application Server.",
             "implemented-requirements": [
                 {
-                    "uuid": "UUID",
-                    "control-id": "control-id-1"
+                    "uuid": "852825aa-877e-4812-a015-eef2303f794d",
+                    "control-id": "MS-01",
+                    "description": "Login.gov implements requirement MS-01 as documented in the statements below",
+                    "statements": [
+                         {
+                            "uuid": "90af122b-89a8-47ce-9adf-e64ed060ea18",
+                            "statement-id": "ms-01_smt",
+                            "description": "Password length is configured in the initializer file located at config/initializers/devise.rb. It is controlled by the variable config.password_length."
+                        }
+                    ],
+                    "by-components": [
+
+                    ]
                 }       
             ]        
         }
