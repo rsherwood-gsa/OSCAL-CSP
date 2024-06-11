@@ -15,23 +15,22 @@
         "system-characteristics": {
             "system-ids": [
                 {
-                    "identifier-type": "URL",
-                    "id": "ID"
+                    "id": "58342685-1600-43d5-9fb6-d06b600640ba"
                 }
             ],
-            "system-name": "OSCAL for CSPs POC",
+             "system-name": "OSCAL for CSPs POC",
             "description": "This is a proof-of-concept of how OSCAL can be used for CSPs.",
             "system-information": {
                 "information-types": [
                     {
-                        "title": "System title",
-                        "description": "This system..."
+                        "title": "Personal Identity and Authentication Information",
+                        "description": "Includes information necessary to ensure all persons who are potentially entitle to receive any federal benefit are enumerated and identified..."
                     }
                 ]
             },
             "status": {
-                "state": "other",
-                "remarks": "This is optional but status is required and I see no propblem with including remarks."
+                "state": "operational",
+                "remarks": "This is only needed if the state is 'other'"
             },
             "authorization-boundary": {
                 "description": "markup-multiline"
