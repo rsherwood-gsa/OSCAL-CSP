@@ -1,0 +1,26 @@
+{
+    "$schema": "https://github.com/usnistgov/OSCAL/releases/download/v1.1.2/oscal_profile_schema.json",
+    "profile": {
+        "uuid": "70167545-32d3-4ace-9e14-c90d095765c3",
+        "metadata": {
+            "title": "800-63 Profile for Proof of Concept",
+            "last-modified": "2024-06-06T00:00:00Z",
+            "version": "0.1",
+            "oscal-version": "1.1.4"
+        },
+        "imports": [
+            {
+                "href": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf",
+                "include-controls": [
+                    {
+                        "with-ids": [
+                            "ms-01",
+                            "ms-13"
+                        ]
+                    }
+                ]
+            }
+        ],
+        "back-matter": {}
+    }
+}
