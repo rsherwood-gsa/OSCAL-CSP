@@ -1,5 +1,4 @@
 {
-    "$schema": "https://github.com/usnistgov/OSCAL/releases/download/v1.1.2/oscal_component_schema.json",
     "component-definition": {
         "uuid": "655A6431-8C60-4686-B33B-2C7B35ABAD79",
         "metadata": {
