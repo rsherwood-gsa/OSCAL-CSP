@@ -10,16 +10,17 @@
             "oscal-version": "1.1.2"
         },
         "import-profile": {
-            "href": "referenceID"
+            "href": "https://github.com/usnistgov/OSCAL/releases/download/v1.1.2/oscal_profile_schema.jsonID"
         },
         "system-characteristics": {
             "system-ids": [
                 {
-                    "id": "58342685-1600-43d5-9fb6-d06b600640ba"
+                    "id": "58342685-1600-43d5-9fb6-d06b600640ba",
+                    "identifier-type": "http://ietf.org/rfc/rfc4122"
                 }
             ],
              "system-name": "OSCAL for CSPs POC",
-            "description": "This is a proof-of-concept of how OSCAL can be used for CSPs.",
+            "description": "This is a proof of concept for running identity-idp (i.e., login.gov software package) to demonstrate automated testing and continuous compliance with 800-63 controls.",
             "system-information": {
                 "information-types": [
                     {
@@ -29,11 +30,10 @@
                 ]
             },
             "status": {
-                "state": "operational",
-                "remarks": "This is only needed if the state is 'other'"
+                "state": "operational"
             },
             "authorization-boundary": {
-                "description": "markup-multiline"
+                "description": "The authorization boundary is limited to this proof-of-concept."
             }
         },
         "system-implementation": {
@@ -72,15 +72,23 @@
                 {
                     "uuid": "852825aa-877e-4812-a015-eef2303f794d",
                     "control-id": "MS-01",
-                    "description": "Login.gov implements requirement MS-01 as documented in the statements below",
                     "statements": [
                          {
                             "uuid": "90af122b-89a8-47ce-9adf-e64ed060ea18",
-                            "statement-id": "ms-01_smt",
-                            "description": "Password length is configured in the initializer file located at config/initializers/devise.rb. It is controlled by the variable config.password_length."
+                            "statement-id": "ms-01_smt"
                         }
                     ],
                     "by-components": [
+                        {
+                            "component-uuid": "4459bba1-a93e-46f2-97ed-03b198a1071f",
+                            "uuid": "6955544b-9f4b-4058-95a5-56a248940b58",
+                            "description": "Login.gov implements requirement MS-01 using rails-devise"
+                        }
+                        {
+                            "component-uuid": "76ECE90B-E3CD-40C7-9448-80BDD001CA2E",
+                            "uuid": "28c1aa4e-bb28-4b49-9561-9de843c7aa76",
+                            "description": "Login.gov implements requirement ms-13 with rails-puma."
+                        }
                     ]
                 }       
             ]        
