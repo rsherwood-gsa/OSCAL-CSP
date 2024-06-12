@@ -1,0 +1,95 @@
+{
+    "$schema": "https://github.com/usnistgov/OSCAL/releases/download/v1.1.2/oscal_ssp_schema.json",
+    "system-security-plan": {
+        "uuid": "7b13072a-c8ce-4324-b5db-58e862fcc7f1",
+        "metadata": {
+            "title": "OSCAL for CSPs POC System Security Plan",
+            "published": "2024-05-08T13:57:28.355446-04:00",
+            "last-modified": "2024-05-08T13:57:28.355446-04:00",
+            "version": "1.0",
+            "oscal-version": "1.1.2"
+        },
+        "import-profile": {
+            "href": "https://github.com/usnistgov/OSCAL/releases/download/v1.1.2/oscal_profile_schema.jsonID"
+        },
+        "system-characteristics": {
+            "system-ids": [
+                {
+                    "id": "58342685-1600-43d5-9fb6-d06b600640ba",
+                    "identifier-type": "http://ietf.org/rfc/rfc4122"
+                }
+            ],
+             "system-name": "OSCAL for CSPs POC",
+            "description": "This is a proof of concept for running identity-idp (i.e., login.gov software package) to demonstrate automated testing and continuous compliance with 800-63 controls.",
+            "system-information": {
+                "information-types": [
+                    {
+                        "title": "Personal Identity and Authentication Information",
+                        "description": "Includes information necessary to ensure all persons who are potentially entitle to receive any federal benefit are enumerated and identified..."
+                    }
+                ]
+            },
+            "status": {
+                "state": "operational"
+            },
+            "authorization-boundary": {
+                "description": "The authorization boundary is limited to this proof-of-concept."
+            }
+        },
+        "system-implementation": {
+            "users": [
+                {
+                    "uuid": "8bcbd5ab-238f-4d65-b876-dee95982d768",
+                    "title": "Audit Team"
+                }
+            ],
+            "components": [
+                {
+                    "uuid": "4459bba1-a93e-46f2-97ed-03b198a1071f",
+                    "type": "software",
+                    "title": "devise",
+                    "description": "Devise is a flexible authentication solution for Rails based on Warden.",
+                    "status": {
+                        "state": "operational"
+                    }
+                },
+                {
+                    "uuid": "76ECE90B-E3CD-40C7-9448-80BDD001CA2E",
+                    "type": "software",
+                    "title": "puma",
+                    "description": "Web Server providing access to the IDP",
+                    "status": {
+                        "state": "operational"
+                    }
+                }
+            ]
+        },
+        "control-implementation": {
+            "description": "Implementation of 800-63B requirements with the Rails Application Server.",
+            "implemented-requirements": [
+                {
+                    "uuid": "852825aa-877e-4812-a015-eef2303f794d",
+                    "control-id": "MS-01",
+                    "statements": [
+                         {
+                            "uuid": "90af122b-89a8-47ce-9adf-e64ed060ea18",
+                            "statement-id": "ms-01_smt"
+                        }
+                    ],
+                    "by-components": [
+                        {
+                            "component-uuid": "4459bba1-a93e-46f2-97ed-03b198a1071f",
+                            "uuid": "6955544b-9f4b-4058-95a5-56a248940b58",
+                            "description": "Login.gov implements requirement MS-01 using rails-devise"
+                        },
+                        {
+                            "component-uuid": "76ECE90B-E3CD-40C7-9448-80BDD001CA2E",
+                            "uuid": "28c1aa4e-bb28-4b49-9561-9de843c7aa76",
+                            "description": "Login.gov implements requirement ms-13 with rails-puma."
+                        }
+                    ]
+                }       
+            ]        
+        }
+    }
+}

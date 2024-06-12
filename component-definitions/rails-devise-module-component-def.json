@@ -1,0 +1,62 @@
+{
+    "component-definition": {
+        "uuid": "c040baf0-844c-473e-9048-5ec032c18d7f",
+        "metadata": {
+            "title": "Rails/Devise Component Definition",
+            "last-modified": "2024-05-07T00:00:00.00Z",
+            "version": "0.1-demo",
+            "oscal-version": "1.1.2"
+        },
+        "components": [
+            {
+                "uuid": "4459bba1-a93e-46f2-97ed-03b198a1071f",
+                "type": "software",
+                "title": "devise",
+                "description": "Devise is a flexible authentication solution for Rails based on Warden.",
+                "props": [
+                    {
+                        "ns": "http://csrc.nist.gov/ns/oscal",
+                        "name": "asset-type",
+                        "value": "web-server"
+                    },
+                    {
+                        "ns": "http://csrc.nist.gov/ns/oscal",
+                        "name": "public",
+                        "value": "no"
+                    },
+                    {
+                        "ns": "http://csrc.nist.gov/ns/oscal",
+                        "name": "virtual",
+                        "value": "yes"
+                    },
+                    {
+                        "ns": "http://csrc.nist.gov/ns/oscal",
+                        "name": "implementation-point",
+                        "value": "internal"
+                    }
+                ],
+                "control-implementations": [
+                    {
+                        "uuid": "2236c549-e6c3-4a85-b06e-2415e4f0b6c9",
+                        "source": "https://pages.nist.gov/REPLACE-WITH-OSCAL-IO-REFERENCE",
+                        "description": "Implementation of 800-63B requirements with the Rails Application Server.",
+                        "implemented-requirements": [
+                            {
+                                "uuid": "852825aa-877e-4812-a015-eef2303f794d",
+                                "control-id": "MS-01",
+                                "description": "Login.gov implements requirement MS-01 as documented in the statements below",
+                                "statements": [
+                                    {
+                                        "uuid": "90af122b-89a8-47ce-9adf-e64ed060ea18",
+                                        "statement-id": "ms-01_smt",
+                                        "description": "Password length is configured in the initializer file located at config/initializers/devise.rb. It is controlled by the variable config.password_length."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
