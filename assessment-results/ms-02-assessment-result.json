@@ -1,57 +1,59 @@
 {
-    "uuid": "316b0362-0ebf-420c-8727-34fcd47dc607",
-    "metadata": {
-        "title": "Test Result for login.gov.",
-        "last_modified": "2024-06-14T10:25:10+00:00",
-        "version": "2024-06-14T10:25:10+00:00",
-        "oscal_version": "1.1.2"
-    },
-    "import_ap": {
-        "href": "./exported_ap.json"
-    },
-    "results": [
-        {
-            "uuid": "d6e32d62-3c64-458d-939e-43826137a26f",
-            "title": "confirms that TLS is configured on the server",
-            "description": "confirms that TLS is configured on the server",
-            "start": "2024-06-14T10:25:10+00:00",
-            "reviewed_controls": {
-                "control_selections": [
+    "assessment-results": {
+        "uuid": "316b0362-0ebf-420c-8727-34fcd47dc607",
+        "metadata": {
+            "title": "Test Result for login.gov.",
+            "last-modified": "2024-06-14T10:25:10+00:00",
+            "version": "2024-06-14T10:25:10+00:00",
+            "oscal-version": "1.1.2"
+        },
+        "import-ap": {
+            "href": "../assessment-plans/ms-02-assessment-plan.json"
+        },
+        "results": [
+            {
+                "uuid": "d6e32d62-3c64-458d-939e-43826137a26f",
+                "title": "confirms that TLS is configured on the server",
+                "description": "confirms that TLS is configured on the server",
+                "start": "2024-06-14T10:25:10+00:00",
+                "reviewed-controls": {
+                    "control-selections": [
+                        {
+                            "include-controls": [
+                                {
+                                    "control-id": "ms-02"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "observations": [
                     {
-                        "include_controls": [
-                            {
-                                "control_id": "ms-02"
-                            }
-                        ]
+                        "uuid": "c1c364ae-4feb-4106-b88c-ba2d11d8fcba",
+                        "title": "confirms that TLS is configured on the server",
+                        "description": "confirms that TLS is configured on the server",
+                        "methods": [
+                            "TEST"
+                        ],
+                        "collected": "2024-06-14T10:25:10+00:00"
                     }
-                ]
-            },
-            "observations": [
-                {
-                    "uuid": "c1c364ae-4feb-4106-b88c-ba2d11d8fcba",
-                    "title": "confirms that TLS is configured on the server",
-                    "description": "confirms that TLS is configured on the server",
-                    "methods": [
-                        "TEST"
-                    ],
-                    "collected": "2024-06-14T10:25:10+00:00"
-                }
-            ],
-            "findings": [
-                {
-                    "uuid": "1f0be873-0c31-4004-9188-d7dadfba9600",
-                    "title": "Automated Test Outcome",
-                    "description": "confirms that TLS is configured on the server",
-                    "target": {
-                        "type": "statement-id",
-                        "target_id": "ms-13_smt",
-                        "status": {
-                            "state": "not-satisfied",
-                            "reason": "fail"
+                ],
+                "findings": [
+                    {
+                        "uuid": "1f0be873-0c31-4004-9188-d7dadfba9600",
+                        "title": "Automated Test Outcome",
+                        "description": "confirms that TLS is configured on the server",
+                        "target": {
+                            "type": "statement-id",
+                            "target-id": "ms-13_smt",
+                            "status": {
+                                "state": "not-satisfied",
+                                "reason": "fail"
+                            }
                         }
                     }
-                }
-            ]
-        }
-    ]
+                ]
+            }
+        ]
+    }
 }

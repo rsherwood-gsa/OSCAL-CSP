@@ -10,17 +10,20 @@
         },
         "imports": [
             {
-                "href": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63b.pdf",
+                "href": "../catalogs/800-63-poc-catalog.json",
                 "include-controls": [
                     {
                         "with-ids": [
                             "ms-01",
-                            "ms-13"
+                            "ms-02",
+                            "ms-03",
+                            "ms-04",
+                            "ms-05",
+                            "ms-06"
                         ]
                     }
                 ]
             }
-        ],
-        "back-matter": {}
+        ]
     }
 }

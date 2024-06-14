@@ -1,57 +1,59 @@
 {
-    "uuid": "4aa4f301-1189-40a6-8011-3bbd956d3c08",
-    "metadata": {
-        "title": "Test Result for login.gov.",
-        "last_modified": "2024-06-14T10:25:10+00:00",
-        "version": "2024-06-14T10:25:10+00:00",
-        "oscal_version": "1.1.2"
-    },
-    "import_ap": {
-        "href": "./exported_ap.json"
-    },
-    "results": [
-        {
-            "uuid": "d89f1b4d-b437-4e95-bba8-072457c858ee",
-            "title": "confirms passwords are set to the appropriate minimum length",
-            "description": "confirms passwords are set to the appropriate minimum length",
-            "start": "2024-06-14T10:25:10+00:00",
-            "reviewed_controls": {
-                "control_selections": [
+    "assessment-results": {
+        "uuid": "4aa4f301-1189-40a6-8011-3bbd956d3c08",
+        "metadata": {
+            "title": "Test Result for login.gov.",
+            "last-modified": "2024-06-14T10:25:10+00:00",
+            "version": "2024-06-14T10:25:10+00:00",
+            "oscal-version": "1.1.2"
+        },
+        "import-ap": {
+            "href": "../assessment-plans/ms-01-assessment-plan.json"
+        },
+        "results": [
+            {
+                "uuid": "d89f1b4d-b437-4e95-bba8-072457c858ee",
+                "title": "confirms passwords are set to the appropriate minimum length",
+                "description": "confirms passwords are set to the appropriate minimum length",
+                "start": "2024-06-14T10:25:10+00:00",
+                "reviewed-controls": {
+                    "control-selections": [
+                        {
+                            "include-controls": [
+                                {
+                                    "control-id": "ms-01"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "observations": [
                     {
-                        "include_controls": [
-                            {
-                                "control_id": "ms-01"
-                            }
-                        ]
+                        "uuid": "b537dd0f-1214-4f0f-ad3e-33e6f490858e",
+                        "title": "confirms passwords are set to the appropriate minimum length",
+                        "description": "confirms passwords are set to the appropriate minimum length",
+                        "methods": [
+                            "TEST"
+                        ],
+                        "collected": "2024-06-14T10:25:10+00:00"
                     }
-                ]
-            },
-            "observations": [
-                {
-                    "uuid": "b537dd0f-1214-4f0f-ad3e-33e6f490858e",
-                    "title": "confirms passwords are set to the appropriate minimum length",
-                    "description": "confirms passwords are set to the appropriate minimum length",
-                    "methods": [
-                        "TEST"
-                    ],
-                    "collected": "2024-06-14T10:25:10+00:00"
-                }
-            ],
-            "findings": [
-                {
-                    "uuid": "a2775ec2-618d-4267-8b7c-85cf814305d5",
-                    "title": "Automated Test Outcome",
-                    "description": "confirms passwords are set to the appropriate minimum length",
-                    "target": {
-                        "type": "statement-id",
-                        "target_id": "ms-01_smt",
-                        "status": {
-                            "state": "satisfied",
-                            "reason": "pass"
+                ],
+                "findings": [
+                    {
+                        "uuid": "a2775ec2-618d-4267-8b7c-85cf814305d5",
+                        "title": "Automated Test Outcome",
+                        "description": "confirms passwords are set to the appropriate minimum length",
+                        "target": {
+                            "type": "statement-id",
+                            "target-id": "ms-01_smt",
+                            "status": {
+                                "state": "satisfied",
+                                "reason": "pass"
+                            }
                         }
                     }
-                }
-            ]
-        }
-    ]
+                ]
+            }
+        ]
+    }
 }

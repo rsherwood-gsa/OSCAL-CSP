@@ -1,0 +1,62 @@
+{
+    "component-definition": {
+        "uuid": "e315ab98-1f5f-46f4-8e1c-2e736353c278",
+        "metadata": {
+            "title": "Rails/ZXCVBN Component Definition",
+            "last-modified": "2024-05-07T00:00:00.00Z",
+            "version": "0.1-demo",
+            "oscal-version": "1.1.2"
+        },
+        "components": [
+            {
+                "uuid": "cc858dc0-fafc-4553-8277-e059be2798cb",
+                "type": "software",
+                "title": "zxcvbn",
+                "description": "zxcvbn is a password quality measurement tool designed to communicate password quality information.",
+                "props": [
+                    {
+                        "ns": "http://csrc.nist.gov/ns/oscal",
+                        "name": "asset-type",
+                        "value": "web-server"
+                    },
+                    {
+                        "ns": "http://csrc.nist.gov/ns/oscal",
+                        "name": "public",
+                        "value": "no"
+                    },
+                    {
+                        "ns": "http://csrc.nist.gov/ns/oscal",
+                        "name": "virtual",
+                        "value": "yes"
+                    },
+                    {
+                        "ns": "http://csrc.nist.gov/ns/oscal",
+                        "name": "implementation-point",
+                        "value": "internal"
+                    }
+                ],
+                "control-implementations": [
+                    {
+                        "uuid": "b0f3a558-3382-4e80-a248-b83c3e1c3373",
+                        "source": "../catalogs/800-63-poc-catalog.json",
+                        "description": "Implementation of 800-63B requirements with the Rails Application Server.",
+                        "implemented-requirements": [
+                            {
+                                "uuid": "be045937-a64d-451b-bffc-2228365d88a2",
+                                "control-id": "MS-04",
+                                "description": "Login.gov implements requirement MS-04 as documented in the statements below",
+                                "statements": [
+                                    {
+                                        "uuid": "841dd1ab-599f-47e9-b2a0-6309a488e999",
+                                        "statement-id": "ms-04-smt",
+                                        "description": "Verifiers SHOULD offer guidance to the subscriber, such as a password-strength meter [Meters], to assist the user in choosing a strong memorized secret."
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

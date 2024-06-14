@@ -1,0 +1,86 @@
+{
+    "$schema": "https://github.com/usnistgov/OSCAL/releases/download/v1.1.2/oscal_catalog_schema.json",
+    "catalog": {
+        "uuid": "2b03ef41-4f40-4249-8b1e-9c7cd69248b1",
+        "metadata": {
+            "title": "POC Catalog for NIST SP 800-63-3",
+            "last-modified": "2024-05-07T00:00:00.00Z",
+            "version": "0.1-demo",
+            "oscal-version": "1.1.2"
+        },
+        "groups": [
+            {
+                "id": "ms",
+                "title": "Memorized Secrets",
+                "controls": [
+                    {
+                        "id": "ms-01",
+                        "title": "Password length",
+                        "parts": [
+                            {
+                                "id": "ms-01-smt",
+                                "name": "statement",
+                                "prose": "Memorized secrets SHALL be at least 8 characters in length if chosen by the subscriber."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ms-02",
+                        "title": "Verifier shall use protected channel",
+                        "parts": [
+                            {
+                                "id": "ms-02-smt",
+                                "name": "statement",
+                                "prose": "The verifier SHALL use approved encryption and an authenticated protected channel when requesting memorized secrets in order to provide resistance to eavesdropping and MitM attacks."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ms-03",
+                        "title": "Compare passwords against known compromised list",
+                        "parts": [
+                            {
+                                "id": "ms-03-smt",
+                                "name": "statement",
+                                "prose": "When processing requests to establish and change memorized secrets, verifiers SHALL compare the prospective secrets against a list that contains values known to be commonly-used, expected, or compromised."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ms-04",
+                        "title": "Verifier should offer guidance",
+                        "parts": [
+                            {
+                                "id": "ms-04-smt",
+                                "name": "statement",
+                                "prose": "Verifiers SHOULD offer guidance to the subscriber, such as a password-strength meter [Meters], to assist the user in choosing a strong memorized secret."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ms-05",
+                        "title": "Secure storage of memorized secrets",
+                        "parts": [
+                            {
+                                "id": "ms-05-smt",
+                                "name": "statement",
+                                "prose": "Verifiers SHALL store memorized secrets in a form that is resistant to offline attacks."
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ms-06",
+                        "title": "Implement rate limiting",
+                        "parts": [
+                            {
+                                "id": "ms-06-smt",
+                                "name": "statement",
+                                "prose": "Verifiers SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber’s account as described in Section 5.2.2."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

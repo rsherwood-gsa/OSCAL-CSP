@@ -1,57 +1,59 @@
 {
-    "uuid": "cac08b88-fa2b-42c2-883b-fca150a93c05",
-    "metadata": {
-        "title": "Test Result for login.gov.",
-        "last_modified": "2024-06-14T10:25:10+00:00",
-        "version": "2024-06-14T10:25:10+00:00",
-        "oscal_version": "1.1.2"
-    },
-    "import_ap": {
-        "href": "./exported_ap.json"
-    },
-    "results": [
-        {
-            "uuid": "4d7d2e21-9439-409c-95ba-a6b6995c925f",
-            "title": "verifies that the system stores memorized secrets in a form that is resistant to offline attacks.",
-            "description": "verifies that the system stores memorized secrets in a form that is resistant to offline attacks.",
-            "start": "2024-06-14T10:25:10+00:00",
-            "reviewed_controls": {
-                "control_selections": [
+    "assessment-results": {
+        "uuid": "cac08b88-fa2b-42c2-883b-fca150a93c05",
+        "metadata": {
+            "title": "Test Result for login.gov.",
+            "last-modified": "2024-06-14T10:25:10+00:00",
+            "version": "2024-06-14T10:25:10+00:00",
+            "oscal-version": "1.1.2"
+        },
+        "import-ap": {
+            "href": "../assessment-plans/ms-05-assessment-plan.json"
+        },
+        "results": [
+            {
+                "uuid": "4d7d2e21-9439-409c-95ba-a6b6995c925f",
+                "title": "verifies that the system stores memorized secrets in a form that is resistant to offline attacks.",
+                "description": "verifies that the system stores memorized secrets in a form that is resistant to offline attacks.",
+                "start": "2024-06-14T10:25:10+00:00",
+                "reviewed-controls": {
+                    "control-selections": [
+                        {
+                            "include-controls": [
+                                {
+                                    "control-id": "ms-05"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "observations": [
                     {
-                        "include_controls": [
-                            {
-                                "control_id": "ms-05"
-                            }
-                        ]
+                        "uuid": "d317b4e9-a9e1-494b-ad94-3ca8b9b87fe9",
+                        "title": "verifies that the system stores memorized secrets in a form that is resistant to offline attacks.",
+                        "description": "verifies that the system stores memorized secrets in a form that is resistant to offline attacks.",
+                        "methods": [
+                            "TEST"
+                        ],
+                        "collected": "2024-06-14T10:25:10+00:00"
                     }
-                ]
-            },
-            "observations": [
-                {
-                    "uuid": "d317b4e9-a9e1-494b-ad94-3ca8b9b87fe9",
-                    "title": "verifies that the system stores memorized secrets in a form that is resistant to offline attacks.",
-                    "description": "verifies that the system stores memorized secrets in a form that is resistant to offline attacks.",
-                    "methods": [
-                        "TEST"
-                    ],
-                    "collected": "2024-06-14T10:25:10+00:00"
-                }
-            ],
-            "findings": [
-                {
-                    "uuid": "8396115b-292a-4554-ab49-d497aec930a2",
-                    "title": "Automated Test Outcome",
-                    "description": "verifies that the system stores memorized secrets in a form that is resistant to offline attacks.",
-                    "target": {
-                        "type": "statement-id",
-                        "target_id": "ms-05-smt",
-                        "status": {
-                            "state": "not-satisfied",
-                            "reason": "fail"
+                ],
+                "findings": [
+                    {
+                        "uuid": "8396115b-292a-4554-ab49-d497aec930a2",
+                        "title": "Automated Test Outcome",
+                        "description": "verifies that the system stores memorized secrets in a form that is resistant to offline attacks.",
+                        "target": {
+                            "type": "statement-id",
+                            "target-id": "ms-05_smt",
+                            "status": {
+                                "state": "not-satisfied",
+                                "reason": "fail"
+                            }
                         }
                     }
-                }
-            ]
-        }
-    ]
+                ]
+            }
+        ]
+    }
 }
