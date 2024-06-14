@@ -19,11 +19,12 @@
                     "identifier-type": "http://ietf.org/rfc/rfc4122"
                 }
             ],
-             "system-name": "OSCAL for CSPs POC",
+            "system-name": "OSCAL for CSPs POC",
             "description": "This is a proof of concept for running identity-idp (i.e., login.gov software package) to demonstrate automated testing and continuous compliance with 800-63 controls.",
             "system-information": {
                 "information-types": [
                     {
+                        "uuid": "1ba7d3b2-7739-4e27-97d7-be73d4eb6a0a",
                         "title": "Personal Identity and Authentication Information",
                         "description": "Includes information necessary to ensure all persons who are potentially entitle to receive any federal benefit are enumerated and identified..."
                     }
@@ -71,7 +72,7 @@
                     "uuid": "852825aa-877e-4812-a015-eef2303f794d",
                     "control-id": "MS-01",
                     "statements": [
-                         {
+                        {
                             "uuid": "90af122b-89a8-47ce-9adf-e64ed060ea18",
                             "statement-id": "ms-01_smt"
                         }
@@ -88,8 +89,8 @@
                             "description": "Login.gov implements requirement ms-13 with rails-puma."
                         }
                     ]
-                }       
-            ]        
+                }
+            ]
         }
     }
 }
