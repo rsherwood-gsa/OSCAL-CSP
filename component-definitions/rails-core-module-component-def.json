@@ -2,7 +2,7 @@
     "component-definition": {
         "uuid": "bab824b1-3c27-43aa-adc8-d391c9a0fb3b",
         "metadata": {
-            "title": "Rails/Devise Component Definition",
+            "title": "Rails/Core Component Definition",
             "last-modified": "2024-05-07T00:00:00.00Z",
             "version": "0.1-demo",
             "oscal-version": "1.1.2"
@@ -11,8 +11,8 @@
             {
                 "uuid": "1b0c8a20-9feb-4283-902c-b3c8d3bdca72",
                 "type": "software",
-                "title": "devise",
-                "description": "Devise is a flexible authentication solution for Rails based on Warden.",
+                "title": "Rails",
+                "description": "Rails is a web application server.",
                 "props": [
                     {
                         "ns": "http://csrc.nist.gov/ns/oscal",
@@ -62,6 +62,30 @@
                                         "uuid": "d6413b67-cf5b-4957-9272-213f6fb5c209",
                                         "statement-id": "ms-03-smt",
                                         "description": "When processing requests to establish and change memorized secrets, verifiers SHALL compare the prospective secrets against a list that contains values known to be commonly-used, expected, or compromised."
+                                    }
+                                ]
+                            },
+                            {
+                                "uuid": "711d2bba-fdd1-4ca8-9332-7d2bdd829fdc",
+                                "control-id": "ms-05",
+                                "description": "Login.gov implements requirement ms-05 as documented in the statements below",
+                                "statements": [
+                                    {
+                                        "uuid": "e0ad5301-c59a-48b7-bc60-ca35ae238f1c",
+                                        "statement-id": "ms-05-smt",
+                                        "description": "Verifiers SHALL store memorized secrets in a form that is resistant to offline attacks."
+                                    }
+                                ]
+                            },
+                            {
+                                "uuid": "ab7bda2e-e1e0-4c1f-ac41-47798e628eae",
+                                "control-id": "ms-06",
+                                "description": "Login.gov implements requirement ms-06 as documented in the statements below",
+                                "statements": [
+                                    {
+                                        "uuid": "8512d346-2bb8-4f12-9062-5e4dce009331",
+                                        "statement-id": "ms-06-smt",
+                                        "description": "Verifiers SHALL implement a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber’s account as described in Section 5.2.2."
                                     }
                                 ]
                             }

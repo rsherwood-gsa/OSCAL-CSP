@@ -59,17 +59,17 @@
                 "control-implementations": [
                     {
                         "uuid": "5CA7C326-0E1E-4EAA-893D-D86F931F36E0",
-                        "source": "https://pages.nist.gov/REPLACE-WITH-OSCAL-IO-REFERENCE",
+                        "source": "../catalogs/800-63-poc-catalog.json",
                         "description": "Implementation of 800-63B requirements by the Rails Web Server.",
                         "implemented-requirements": [
                             {
                                 "uuid": "148695C5-9935-4C7A-AFD7-469CE28402B8",
-                                "control-id": "ms-13",
-                                "description": "Login.gov implements requirement ms-13 as documented in the statements below",
+                                "control-id": "ms-02",
+                                "description": "Login.gov implements requirement ms-02 as documented in the statements below",
                                 "statements": [
                                     {
                                         "uuid": "98289486-DD7D-40B4-A0AD-D0E81F32E656",
-                                        "statement-id": "ms-13_smt",
+                                        "statement-id": "ms-02-smt",
                                         "description": "The server may be started with HTTPS=on in order to provide TLS"
                                     }
                                 ]

@@ -7,7 +7,7 @@
         "oscal-version": "1.1.2"
     },
     "import-ssp": {
-        "href": "./assessment-plan.json"
+        "href": "../system-security-plans/CSP_POC_ssp.json"
     },
     "reviewed-controls": {
         "control-selections": [
