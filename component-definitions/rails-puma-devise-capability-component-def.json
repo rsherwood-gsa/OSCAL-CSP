@@ -1,7 +1,7 @@
 {
     "$schema": "https://github.com/usnistgov/OSCAL/releases/download/v1.1.2/oscal_component_schema.json",
     "component-definition": {
-        "uuid": "655A6431-8C60-4686-B33B-2C7B35ABAD79",
+        "uuid": "02f07ee6-656c-46a0-bc81-7a34dda3f043",
         "metadata": {
             "title": "Rails Component Definition",
             "last-modified": "2024-05-07T00:00:00.00Z",
@@ -27,7 +27,7 @@
                         "description": "Ruby on Rails puma web server component."
                     },
                     {
-                        "component-uuid": "76ECE90B-E3CD-40C7-9448-80BDD001CA2E",
+                        "component-uuid": "c040baf0-844c-473e-9048-5ec032c18d7f",
                         "description": "Devise: Ruby on Rails authentication module"
                     }
                 ]
