@@ -1,7 +1,7 @@
 {
     "$schema": "https://github.com/usnistgov/OSCAL/releases/download/v1.1.2/oscal_catalog_schema.json",
     "catalog": {
-        "uuid": "79765999-6d98-4011-aab9-1790a98243fa",
+        "uuid": "2b03ef41-4f40-4249-8b1e-9c7cd69248b1",
         "metadata": {
             "title": "POC Catalog for NIST SP 800-63-3",
             "last-modified": "2024-05-07T00:00:00.00Z",
