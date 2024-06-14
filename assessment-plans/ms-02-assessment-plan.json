@@ -1,9 +1,9 @@
 {
-    "uuid": "da1ce957-e50e-42a0-936e-1a44f9d8a96c",
+    "uuid": "04465aa4-eebc-4527-894f-649e900081b8",
     "metadata": {
-        "title": "Automated Testing Plan for login.gov. It confirms passwords are set to the appropriate minimum length",
-        "last_modified": "2024-06-03T17:48:55+00:00",
-        "version": "2024-06-03T17:48:55+00:00",
+        "title": "Automated Testing Plan for login.gov. It confirms that TLS is configured on the server",
+        "last_modified": "2024-06-14T10:25:10+00:00",
+        "version": "2024-06-14T10:25:10+00:00",
         "oscal_version": "1.1.2"
     },
     "import_ssp": {
@@ -14,9 +14,9 @@
             {
                 "include_controls": [
                     {
-                        "control_id": "ms-01",
+                        "control_id": "ms-02",
                         "statement_ids": [
-                            "ms-01_smt"
+                            "ms-13_smt"
                         ]
                     }
                 ]
