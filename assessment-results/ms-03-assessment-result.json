@@ -1,57 +1,59 @@
 {
-    "uuid": "00f706d8-dc08-43d9-ab04-9fe893df4977",
-    "metadata": {
-        "title": "Test Result for login.gov.",
-        "last_modified": "2024-06-14T10:25:10+00:00",
-        "version": "2024-06-14T10:25:10+00:00",
-        "oscal_version": "1.1.2"
-    },
-    "import_ap": {
-        "href": "./exported_ap.json"
-    },
-    "results": [
-        {
-            "uuid": "d4f5992a-b4dc-42f4-a852-377e30c5e075",
-            "title": "verifies that passwords are compared against a list that contains values known to be commonly-used, expected, or compromised.",
-            "description": "verifies that passwords are compared against a list that contains values known to be commonly-used, expected, or compromised.",
-            "start": "2024-06-14T10:25:10+00:00",
-            "reviewed_controls": {
-                "control_selections": [
+    "assessment-results": {
+        "uuid": "00f706d8-dc08-43d9-ab04-9fe893df4977",
+        "metadata": {
+            "title": "Test Result for login.gov.",
+            "last-modified": "2024-06-14T10:25:10+00:00",
+            "version": "2024-06-14T10:25:10+00:00",
+            "oscal-version": "1.1.2"
+        },
+        "import-ap": {
+            "href": "./exported-ap.json"
+        },
+        "results": [
+            {
+                "uuid": "d4f5992a-b4dc-42f4-a852-377e30c5e075",
+                "title": "verifies that passwords are compared against a list that contains values known to be commonly-used, expected, or compromised.",
+                "description": "verifies that passwords are compared against a list that contains values known to be commonly-used, expected, or compromised.",
+                "start": "2024-06-14T10:25:10+00:00",
+                "reviewed-controls": {
+                    "control-selections": [
+                        {
+                            "include-controls": [
+                                {
+                                    "control-id": "ms-03"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "observations": [
                     {
-                        "include_controls": [
-                            {
-                                "control_id": "ms-03"
-                            }
-                        ]
+                        "uuid": "8839494d-f87e-4f8d-9add-1a9f0f60ceba",
+                        "title": "verifies that passwords are compared against a list that contains values known to be commonly-used, expected, or compromised.",
+                        "description": "verifies that passwords are compared against a list that contains values known to be commonly-used, expected, or compromised.",
+                        "methods": [
+                            "TEST"
+                        ],
+                        "collected": "2024-06-14T10:25:10+00:00"
                     }
-                ]
-            },
-            "observations": [
-                {
-                    "uuid": "8839494d-f87e-4f8d-9add-1a9f0f60ceba",
-                    "title": "verifies that passwords are compared against a list that contains values known to be commonly-used, expected, or compromised.",
-                    "description": "verifies that passwords are compared against a list that contains values known to be commonly-used, expected, or compromised.",
-                    "methods": [
-                        "TEST"
-                    ],
-                    "collected": "2024-06-14T10:25:10+00:00"
-                }
-            ],
-            "findings": [
-                {
-                    "uuid": "3e2e1dda-a73a-4b2d-9db7-6c6a20904233",
-                    "title": "Automated Test Outcome",
-                    "description": "verifies that passwords are compared against a list that contains values known to be commonly-used, expected, or compromised.",
-                    "target": {
-                        "type": "statement-id",
-                        "target_id": "ms-03-smt",
-                        "status": {
-                            "state": "satisfied",
-                            "reason": "pass"
+                ],
+                "findings": [
+                    {
+                        "uuid": "3e2e1dda-a73a-4b2d-9db7-6c6a20904233",
+                        "title": "Automated Test Outcome",
+                        "description": "verifies that passwords are compared against a list that contains values known to be commonly-used, expected, or compromised.",
+                        "target": {
+                            "type": "statement-id",
+                            "target-id": "ms-03_smt",
+                            "status": {
+                                "state": "satisfied",
+                                "reason": "pass"
+                            }
                         }
                     }
-                }
-            ]
-        }
-    ]
+                ]
+            }
+        ]
+    }
 }

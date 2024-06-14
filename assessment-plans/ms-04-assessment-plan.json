@@ -2,20 +2,20 @@
     "uuid": "7a75d646-a3dd-4e33-92c1-53450950a645",
     "metadata": {
         "title": "Automated Testing Plan for login.gov. It verifies that the system offers guidance to the subscriber, such as a password-strength meter",
-        "last_modified": "2024-06-14T10:25:10+00:00",
+        "last-modified": "2024-06-14T10:25:10+00:00",
         "version": "2024-06-14T10:25:10+00:00",
-        "oscal_version": "1.1.2"
+        "oscal-version": "1.1.2"
     },
-    "import_ssp": {
-        "href": "./assessment_plan.json"
+    "import-ssp": {
+        "href": "./assessment-plan.json"
     },
-    "reviewed_controls": {
-        "control_selections": [
+    "reviewed-controls": {
+        "control-selections": [
             {
-                "include_controls": [
+                "include-controls": [
                     {
-                        "control_id": "ms-04",
-                        "statement_ids": [
+                        "control-id": "ms-04",
+                        "statement-ids": [
                             "ms-04-smt"
                         ]
                     }

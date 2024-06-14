@@ -1,57 +1,59 @@
 {
-    "uuid": "b06f37fc-7a21-4b66-a5e6-3f6bca596d72",
-    "metadata": {
-        "title": "Test Result for login.gov.",
-        "last_modified": "2024-06-14T10:25:10+00:00",
-        "version": "2024-06-14T10:25:10+00:00",
-        "oscal_version": "1.1.2"
-    },
-    "import_ap": {
-        "href": "./exported_ap.json"
-    },
-    "results": [
-        {
-            "uuid": "4a28b9f1-3b04-4ffd-a76e-96226dbb2212",
-            "title": "verifies that the system has implemented a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber’s account",
-            "description": "verifies that the system has implemented a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber’s account",
-            "start": "2024-06-14T10:25:10+00:00",
-            "reviewed_controls": {
-                "control_selections": [
+    "assessment-results": {
+        "uuid": "b06f37fc-7a21-4b66-a5e6-3f6bca596d72",
+        "metadata": {
+            "title": "Test Result for login.gov.",
+            "last-modified": "2024-06-14T10:25:10+00:00",
+            "version": "2024-06-14T10:25:10+00:00",
+            "oscal-version": "1.1.2"
+        },
+        "import-ap": {
+            "href": "./exported-ap.json"
+        },
+        "results": [
+            {
+                "uuid": "4a28b9f1-3b04-4ffd-a76e-96226dbb2212",
+                "title": "verifies that the system has implemented a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber’s account",
+                "description": "verifies that the system has implemented a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber’s account",
+                "start": "2024-06-14T10:25:10+00:00",
+                "reviewed-controls": {
+                    "control-selections": [
+                        {
+                            "include-controls": [
+                                {
+                                    "control-id": "ms-06"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "observations": [
                     {
-                        "include_controls": [
-                            {
-                                "control_id": "ms-06"
-                            }
-                        ]
+                        "uuid": "dad9c2be-5c03-456a-946e-fec66e835acb",
+                        "title": "verifies that the system has implemented a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber’s account",
+                        "description": "verifies that the system has implemented a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber’s account",
+                        "methods": [
+                            "TEST"
+                        ],
+                        "collected": "2024-06-14T10:25:10+00:00"
                     }
-                ]
-            },
-            "observations": [
-                {
-                    "uuid": "dad9c2be-5c03-456a-946e-fec66e835acb",
-                    "title": "verifies that the system has implemented a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber’s account",
-                    "description": "verifies that the system has implemented a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber’s account",
-                    "methods": [
-                        "TEST"
-                    ],
-                    "collected": "2024-06-14T10:25:10+00:00"
-                }
-            ],
-            "findings": [
-                {
-                    "uuid": "235d2195-cfbf-42ae-bc78-bfca0d2029ba",
-                    "title": "Automated Test Outcome",
-                    "description": "verifies that the system has implemented a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber’s account",
-                    "target": {
-                        "type": "statement-id",
-                        "target_id": "ms-06-smt",
-                        "status": {
-                            "state": "satisfied",
-                            "reason": "pass"
+                ],
+                "findings": [
+                    {
+                        "uuid": "235d2195-cfbf-42ae-bc78-bfca0d2029ba",
+                        "title": "Automated Test Outcome",
+                        "description": "verifies that the system has implemented a rate-limiting mechanism that effectively limits the number of failed authentication attempts that can be made on the subscriber’s account",
+                        "target": {
+                            "type": "statement-id",
+                            "target-id": "ms-06_smt",
+                            "status": {
+                                "state": "satisfied",
+                                "reason": "pass"
+                            }
                         }
                     }
-                }
-            ]
-        }
-    ]
+                ]
+            }
+        ]
+    }
 }

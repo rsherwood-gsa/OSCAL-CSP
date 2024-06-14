@@ -1,57 +1,59 @@
 {
-    "uuid": "3947bc1f-7b6b-4d7b-91f1-1d2c6ee83be9",
-    "metadata": {
-        "title": "Test Result for login.gov.",
-        "last_modified": "2024-06-14T10:25:10+00:00",
-        "version": "2024-06-14T10:25:10+00:00",
-        "oscal_version": "1.1.2"
-    },
-    "import_ap": {
-        "href": "./exported_ap.json"
-    },
-    "results": [
-        {
-            "uuid": "c37e7081-df0c-4877-8b24-1581765824f4",
-            "title": "verifies that the system offers guidance to the subscriber, such as a password-strength meter",
-            "description": "verifies that the system offers guidance to the subscriber, such as a password-strength meter",
-            "start": "2024-06-14T10:25:10+00:00",
-            "reviewed_controls": {
-                "control_selections": [
+    "assessment-results": {
+        "uuid": "3947bc1f-7b6b-4d7b-91f1-1d2c6ee83be9",
+        "metadata": {
+            "title": "Test Result for login.gov.",
+            "last-modified": "2024-06-14T10:25:10+00:00",
+            "version": "2024-06-14T10:25:10+00:00",
+            "oscal-version": "1.1.2"
+        },
+        "import-ap": {
+            "href": "./exported-ap.json"
+        },
+        "results": [
+            {
+                "uuid": "c37e7081-df0c-4877-8b24-1581765824f4",
+                "title": "verifies that the system offers guidance to the subscriber, such as a password-strength meter",
+                "description": "verifies that the system offers guidance to the subscriber, such as a password-strength meter",
+                "start": "2024-06-14T10:25:10+00:00",
+                "reviewed-controls": {
+                    "control-selections": [
+                        {
+                            "include-controls": [
+                                {
+                                    "control-id": "ms-04"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                "observations": [
                     {
-                        "include_controls": [
-                            {
-                                "control_id": "ms-04"
-                            }
-                        ]
+                        "uuid": "caa20b47-3c3d-4e2a-b481-91c87408c6b9",
+                        "title": "verifies that the system offers guidance to the subscriber, such as a password-strength meter",
+                        "description": "verifies that the system offers guidance to the subscriber, such as a password-strength meter",
+                        "methods": [
+                            "TEST"
+                        ],
+                        "collected": "2024-06-14T10:25:10+00:00"
                     }
-                ]
-            },
-            "observations": [
-                {
-                    "uuid": "caa20b47-3c3d-4e2a-b481-91c87408c6b9",
-                    "title": "verifies that the system offers guidance to the subscriber, such as a password-strength meter",
-                    "description": "verifies that the system offers guidance to the subscriber, such as a password-strength meter",
-                    "methods": [
-                        "TEST"
-                    ],
-                    "collected": "2024-06-14T10:25:10+00:00"
-                }
-            ],
-            "findings": [
-                {
-                    "uuid": "19cde0b2-b73e-45fe-b167-3bcd8c348dfa",
-                    "title": "Automated Test Outcome",
-                    "description": "verifies that the system offers guidance to the subscriber, such as a password-strength meter",
-                    "target": {
-                        "type": "statement-id",
-                        "target_id": "ms-04-smt",
-                        "status": {
-                            "state": "satisfied",
-                            "reason": "pass"
+                ],
+                "findings": [
+                    {
+                        "uuid": "19cde0b2-b73e-45fe-b167-3bcd8c348dfa",
+                        "title": "Automated Test Outcome",
+                        "description": "verifies that the system offers guidance to the subscriber, such as a password-strength meter",
+                        "target": {
+                            "type": "statement-id",
+                            "target-id": "ms-04_smt",
+                            "status": {
+                                "state": "satisfied",
+                                "reason": "pass"
+                            }
                         }
                     }
-                }
-            ]
-        }
-    ]
+                ]
+            }
+        ]
+    }
 }
