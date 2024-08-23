@@ -1,0 +1,678 @@
+{
+    "$schema": "https://github.com/usnistgov/OSCAL/releases/download/v1.1.2/oscal_catalog_schema.json",
+    "catalog": {
+        "uuid": "a7caf730-451c-4950-891e-710b53e3dcd3",
+        "metadata": {
+            "title": "POC FPKI CP Catalog",
+            "last-modified": "2024-08-02T00:00:00.00Z",
+            "version": "0.1-demo",
+            "oscal-version": "1.1.2",
+            "revisions": [
+                {
+                    "published": "2007-05-07T00:00:00+00:00",
+                    "version": "1.0",
+                    "remarks": "Revised Common Policy (RFC 3647 format)"
+                },
+                {
+                    "published": "2007-07-17T00:00:00+00:00",
+                    "version": "1.1",
+                    "remarks": "2007-01:  Alignment of Cryptographic Algorithm Requirements with SP 800-78-1"
+                },
+                {
+                    "published": "2007-09-12T00:00:00+00:00",
+                    "version": "1.2",
+                    "remarks": "2007-02:  Requiring the inclusion of a subject DN in PIV Authentication Certificates"
+                },
+                {
+                    "published": "2007-10-16T00:00:00+00:00",
+                    "version": "1.3",
+                    "remarks": "2007-03:  Accommodating legacy PKIs for PIV Authentication"
+                },
+                {
+                    "published": "2008-04-03T00:00:00+00:00",
+                    "version": "1.4",
+                    "remarks": "2008-01:  § 8.3 Assessor’s Relationship to Assessed Entity"
+                },
+                {
+                    "published": "2008-11-20T00:00:00+00:00",
+                    "version": "1.5",
+                    "remarks": "2008-02:  Include a provision for a role-based signature certificate"
+                },
+                {
+                    "published": "2009-02-11T00:00:00+00:00",
+                    "version": "1.6",
+                    "remarks": "2009-01:  nextUpdate in Certificate Revocation Lists (CRL) published by legacy Federal PKIs"
+                },
+                {
+                    "published": "2009-04-15T00:00:00+00:00",
+                    "version": "1.7",
+                    "remarks": "2009-02:  Allow the use of the PIV Authentication certificate as proof of identity and employment"
+                },
+                {
+                    "published": "2010-01-21T00:00:00+00:00",
+                    "version": "1.8",
+                    "remarks": "2010-01:  Align key length requirements w/ SP 800-57  2010-02:  Remote Administration of Certification Authorities"
+                },
+                {
+                    "published": "2010-03-15T00:00:00+00:00",
+                    "version": "1.9",
+                    "remarks": "2010-03:  Allowing inclusion of UUIDs in Card Authentication Certificates"
+                },
+                {
+                    "published": "2010-04-08T00:00:00+00:00",
+                    "version": "1.10",
+                    "remarks": "2010-04:  § 8.1 & 8.4"
+                },
+                {
+                    "published": "2010-08-16T00:00:00+00:00",
+                    "version": "1.11",
+                    "remarks": "2010-05:  Clarify the archive definition and how its records are intended to be used"
+                },
+                {
+                    "published": "2010-10-15T00:00:00+00:00",
+                    "version": "1.12",
+                    "remarks": "2010-06:  Allow Federal Legacy PKIs to Directly Cross Certify with Common Policy CA"
+                },
+                {
+                    "published": "2010-11-18T00:00:00+00:00",
+                    "version": "1.13",
+                    "remarks": "2010-07:  Legacy use of SHA-1 during transition period Jan 1, 2011 to Dec 31, 2013"
+                },
+                {
+                    "published": "2010-12-17T00:00:00+00:00",
+                    "version": "1.14",
+                    "remarks": "2010-08:  Clarify requirement to support CA Key Rollover"
+                },
+                {
+                    "published": "2011-01-24T00:00:00+00:00",
+                    "version": "1.15",
+                    "remarks": "2011-01:  CAs to assert policy OIDs in OCSP responder certificates for which the OCSP responder is authoritative"
+                },
+                {
+                    "published": "2011-09-23T00:00:00+00:00",
+                    "version": "1.16",
+                    "remarks": "2011-02:  Clarify requirements for device Subscribers and certificates"
+                },
+                {
+                    "published": "2011-12-13T00:00:00+00:00",
+                    "version": "1.17",
+                    "remarks": "2011-03:  Remove Requirements for LDAP References in Certificates"
+                },
+                {
+                    "published": "2012-04-26T00:00:00+00:00",
+                    "version": "1.18",
+                    "remarks": "2012-01:  Clarify RA audit requirements: revise Section 1.3.1.5, add new last sentence to first paragraph of Section 8, revise first paragraph of Section 8.1, revise Sections 8.4, 8.5, and 8.6, revise \"Policy Management Authority (PMA)\" glossary definition."
+                },
+                {
+                    "published": "2012-06-22T00:00:00+00:00",
+                    "version": "1.19",
+                    "remarks": "2012-02:  Add new Section 4.1.1.4, Code Signing Certificates, to address change proposal (approved by FPKIPA on 6/12/12) requiring organizations receiving a code signing certificate to have access to a Time Stamp Authority."
+                },
+                {
+                    "published": "2012-08-19T00:00:00+00:00",
+                    "version": "1.20",
+                    "remarks": "2012-03:  Add new language to Sections 3.2.3.2 and 9.6.3 to address change proposal (approved by FPKIPA on 8/14/12) to allow a human device sponsor, who is not physically located near the sponsored device, and/or who does not have sufficient administrative privileges on the sponsored device to fulfill these responsibilities, to delegate them to an authorized administrator of the device. 2012-04:  Revise Section 4.9.7 to address change proposal (approved by FPKIPA on 8/12/12) to detail and clarify the Common Policy CA’s CRL issuance policies to ensure Offline Root CA operations are permitted. "
+                },
+                {
+                    "published": "2012-12-18T00:00:00+00:00",
+                    "version": "1.21",
+                    "remarks": "2012-05:  Revise Sections 1.2, 1.4.1, 3.1.1, 6.2.8, 6.3.2, 7.1.4, 7.1.6, and add new Sections 6.1.1.4 and 6.2.4.6 to address change proposal (approved by FPKIPA on 12/6/12) to create a new Common PIV Content Signing Policy OID."
+                },
+                {
+                    "published": "2013-12-02T00:00:00+00:00",
+                    "version": "1.22",
+                    "remarks": "2013-01:  Clarify places in the Common Policy CP which were flagged during the FPKIMA Annual Audit as either contradictory with the FBCA CP or contradictory to current best practices. Clarify division of responsibilities between Trusted Roles (Section 5.2.1); clarify meaning of “all Security Audit logs (Section 5.4.1), and allow audit logs to be removed from production site once reviewed (Section 5.4.3) 2013-02:  Remove SHA-1 policies from Common Policy. "
+                },
+                {
+                    "published": "2014-05-05T00:00:00+00:00",
+                    "version": "1.23",
+                    "remarks": "2013-03:  Require PIV Cards to be on the GSA Approved Products List (APL) Prior to Issuance and require annual PIV card testing."
+                },
+                {
+                    "published": "2015-05-07T00:00:00+00:00",
+                    "version": "1.24",
+                    "remarks": "2015-01:  Create two new Common Derived PIV Authentication Certificate Policy OIDs in the Common Policy, and change/add text in appropriate sections throughout the CP."
+                },
+                {
+                    "published": "2016-09-22T00:00:00+00:00",
+                    "version": "1.25",
+                    "remarks": "2016-01:  Alignment with CAB Forum Baseline Requirements (BR) v1.3.4. This will facilitate FPKI conformance to CAB Forum BRs for publicly-trusted SSL/TLS certificates, which will help promote inclusion of the Federal Root in public trust stores and provide guidance for issuance of publicly-trusted device certificates. 2016-02:  Allow a long term CRL when a CA retires a key after performing a key changeover to align with the FPKI CPS. "
+                },
+                {
+                    "published": "2017-02-02T00:00:00+00:00",
+                    "version": "1.26",
+                    "remarks": "2016-03:  Remove or update references to obsoleted RFCs. Changes to Sections 1.3.1.7, 3.1.2, 3.1.4, 4.9.7, and 10."
+                },
+                {
+                    "published": "2017-06-29T00:00:00+00:00",
+                    "version": "1.27",
+                    "remarks": "2017-01:  Align CP with current FPKIMA practice for CA certificates. 2017-02:  Require CAs to publish information pertaining to resolved incidents on their websites. 2017-03:  Require CAs to notify the FPKIPA whenever a change is made to their infrastructure 2017-04:  Clarifies the period of time PIV card stock can continue to be used once it has been removed from the GSA APL. "
+                },
+                {
+                    "published": "2018-04-04T00:00:00+00:00",
+                    "version": "1.28",
+                    "remarks": "2018-01:  Key Recovery for key management certificates issued under the COMMON Policy"
+                },
+                {
+                    "published": "2018-05-10T00:00:00+00:00",
+                    "version": "1.29",
+                    "remarks": "2018-02:  Add reference to Annual Review Requirements 2018-03:  Mandate specific EKUs in certificates issued after June 30, 2019 2018-04:  Certificate revocation requirements for Transitive Closure after August 15, 2018 2018-05:  Requirements for virtual implementations "
+                },
+                {
+                    "published": "2018-10-04T00:00:00+00:00",
+                    "version": "1.30",
+                    "remarks": "2018-06:  Incorporate “supervised remote identity proofing” and other new guidance as defined in NIST SP 800-63-3 effective as of October 4, 2018"
+                },
+                {
+                    "published": "2019-02-08T00:00:00+00:00",
+                    "version": "1.31",
+                    "remarks": "2018-07:  Remove the common-public-trusted-serverAuth certificate policy and associated requirements effective as of February 8, 2019 2018-08:  Permit retention of private signing key(s) following CA termination effective as of February 8, 2019 "
+                },
+                {
+                    "published": "2020-04-14T00:00:00+00:00",
+                    "version": "1.32",
+                    "remarks": "2020-01:  Add support for federally issued Personal Identity Verification-Interoperable (PIV-I) credentials"
+                },
+                {
+                    "published": "2020-09-01T00:00:00+00:00",
+                    "version": "2.0",
+                    "remarks": "2020-02:  Consolidated update to Common Policy and associated profiles, effective as of September 1, 2021. See the change proposal cover sheet for more detail."
+                },
+                {
+                    "published": "2021-05-18T00:00:00+00:00",
+                    "version": "2.1",
+                    "remarks": "2021-01:  Consolidated Key Recovery Policy requirements into Common Policy."
+                },
+                {
+                    "published": "2021-12-01T00:00:00+00:00",
+                    "version": "2.2",
+                    "remarks": "2020-02:  Updates to Section 5.4 and Section 5.5 to clarify the purpose of audit and archive, align recorded events and clarify archive retention periods. Updated reference links included. Implementation date is November 1, 2022.  2020-03:  Removes the prohibition on container technology and generalizes terminology. Effective as of December 1, 2021."
+                },
+                {
+                    "published": "2022-09-09T00:00:00+00:00",
+                    "version": "2.3",
+                    "remarks": "2022-01A:  Update to Section 5.5.2 to provide specificity for archive record retention periods, assisting RAs, or other archiving elements, to understand what artifacts need to be archived, and for how long in certain scenarios. Implementation date is November 1, 2022. "
+                },
+                {
+                    "published": "2023-04-17T00:00:00+00:00",
+                    "version": "2.4",
+                    "remarks": "2023-02:  Incorporates changes to multiple sections based on the comments received by the CPWG to include certificate suspension requirements, 3rd  party key recovery request handling, public key parameters, key generation specifics, and remote workstation definition. Changes effective as of September 1, 2023. "
+                },
+                {
+                    "published": "2023-07-06T00:00:00+00:00",
+                    "version": "2.5",
+                    "remarks": "2023-04:  Clarifies the audit and archive requirements for assignment of Trusted Roles. Additionally, removes obsolete references. Change effective immediately. "
+                },
+                {
+                    "published": "2023-11-03T00:00:00+00:00",
+                    "version": "2.6",
+                    "remarks": "2023-06:  Clarify the requirements around certificate modifications, define requirements for certificate restoration, align audit and archive terminology for certificate status changes, and generalize two document references. Change effective immediately. "
+                },
+                {
+                    "published": "2024-02-02T00:00:00+00:00",
+                    "version": "2.7",
+                    "remarks": "2024-02:  Clarify the definition of a “remote workstation used to administer the CA” in order to accommodate current secure practices. 2024-03:  Clarify policy language based on the 2023 FPKI annual compliance audit, specifically regarding interoperation with CAs issuing under different policies and the time to process revocation requests. "
+                },
+                {
+                    "published": "2024-05-08T00:00:00+00:00",
+                    "version": "2.8",
+                    "remarks": "2024-05:  Clarify the definition of a “remote workstation used to administer the CA” in order to more clearly delineate parity with CA security controls."
+                }
+            ]
+        },
+        "groups": [
+            {
+                "id": "group-d1602f21-f167-4890-a265-c1ef519fce49",
+                "title": "Identification and Authentication",
+                "groups": [
+                    {
+                        "id": "group-679da5cb-8a0d-41a1-bec0-db566a854006",
+                        "title": "Initial Identity Validation",
+                        "groups": [
+                            {
+                                "id": "group-6d4ddc32-aacf-4bb1-b6af-906e8ca34b2e",
+                                "title": "Authentication of Individual Identity",
+                                "groups": [
+                                    {
+                                        "id": "control-6d4ddc32-aacf-4bb1-b6af-906e8ca34b2e",
+                                        "title": "Authentication of Individual Identity: Group for Normative Statements",
+                                        "controls": [
+                                            {
+                                                "id": "ctrl-706a2b84-87a5-47d7-a0e9-59b1d54345c6",
+                                                "title": "Authentication of Individual Identity: Normative Statements",
+                                                "props": [
+                                                    {
+                                                        "name": "source",
+                                                        "value": "FBCA"
+                                                    },
+                                                        {
+                                                            "name": "source",
+                                                            "value": "Common"
+                                                        }
+                                                ],
+                                                "parts": [
+                                                    {
+                                                        "id": "stmt-706a2b84-87a5-47d7-a0e9-59b1d54345c6-1",
+                                                        "name": "statement",
+                                                        "ns": "http://csrc.nist.gov/ns/oscal",
+                                                        "prose": "For each certificate issued, the CA must authenticate the identity of the individual requester."
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3",
+                                        "title": "Authentication of Human Subscribers",
+                                        "parts": [
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-0",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "1.  Verify that a request for certificate issuance to the Applicant was submitted by agency management."
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-1",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "2.  Verify Applicant's employment through use of official agency records."
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-2",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "3.  Establish Applicant's identity by in-person or supervised remote[^1] proofing before the RA or trusted agent, as follows:"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-3",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "    1.  The Applicant presents a government-issued form of identification (e.g., an Agency ID badge, a passport, or driver's license) as proof of identity, and"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-4",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "    2.  The RA examines the presented credential for biometric data that can be linked to the Applicant (e.g., a photograph on the credential itself or a securely linked photograph of Applicant), and"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-5",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "4.  Record and maintain a biometric of the Applicant (e.g., a photograph or fingerprint) by the RA or CA. (Handwritten signatures and other behavioral characteristics are not accepted as biometrics for the purposes of this policy.) This establishes an audit trail for dispute resolution."
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-6",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "1.  Verify that a request for certificate issuance to the Applicant was submitted by an authorized sponsoring agency employee (e.g., contracting officer or contracting officer's technical representative)."
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-7",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "2.  Verify sponsoring agency employee’s identity and employment as follows:"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-8",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "    1.  A digitally signed request from the sponsoring agency employee, verified by a currently valid employee signature certificate issued by an agency CA, may be accepted as proof of both employment and identity,"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-9",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "    2.  Authentication of the sponsoring agency employee with a valid employee PIV-authentication certificate issued by the agency may be accepted as proof of both employment and identity, or"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-10",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "    3.  In-person or supervised remote identity proofing of the sponsoring agency employee may be established before the registration authority as specified in employee authentication above and employment validated through use of the official agency records."
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-11",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "3.  Establish Applicant's identity by in-person or supervised remote proofing before the registration authority or trusted agent, as follows:"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-12",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "    1.  The Applicant presents a government-issued form of identification (e.g., an Agency ID badge, a passport, or driver's license) as proof of identity, and"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-13",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "    2.  The RA examines the presented credential for biometric data that can be linked to the Applicant (e.g., a photograph on the credential itself or a securely linked photograph of Applicant), and"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-14",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "4.  Record and maintain a biometric of the Applicant (e.g., a photograph or fingerprint) by the RA or CA. (Handwritten signatures and other behavioral characteristics are not accepted as biometrics for the purposes of this policy.) This establishes an audit trail for dispute resolution."
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-15",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "- The identity of the person performing the authentication and either:"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-16",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "  - A signed declaration by that person that he or she verified the identity of the Applicant using the format set forth at \\[28 U.S.C. 1746\\] (declaration under penalty of perjury); or"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-17",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "  - An auditable record identifying the person performing the identification and recording the assertion that he or she verified the identity of the Applicant."
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-18",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "- Unique identifying number(s) from the ID(s) of the Applicant, or a facsimile of the ID(s);"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-19",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "- The biometric of the Applicant;"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-20",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "- The date and time of the verification; and either:"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-21",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "  - An auditable record indicating the applicant accepted the certificate; or"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-22",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "  - A declaration of identity signed by the Applicant using a handwritten signature or appropriate digital signature and performed in the presence of the person performing the identity authentication, using the format set forth at \\[28 U.S.C. 1746\\] (declaration under penalty of perjury)."
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-23",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "For id-fpki-common-policy and id-fpki-common-hardware, RAs may accept authentication of an Applicant's identity attested to and documented by a trusted agent, assuming agency identity requirements are otherwise satisfied. Authentication by a trusted agent does not relieve the RA of its responsibility to verify required procedures were followed as described above."
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-24",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "1)  Verify that the request for certificate issuance to the Applicant was submitted by an authorized agency employee."
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-25",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "2)  Use the PKI-AUTH authentication mechanism from Section 6 of \\[FIPS 201\\] to verify that the PIV Authentication certificate on the Applicant's PIV credential is valid and that the Applicant is in possession of the corresponding private key."
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-26",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "3)  Maintain a copy of the Applicant's PIV Authentication certificate."
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-27",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "In cases where a 1:1 biometric match against the biometrics available on the PIV credential or in the chain-of-trust, as defined in \\[FIPS 201\\] is not possible:"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-28",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "- The identity of the person performing the authentication and either:"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-29",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "  - A signed declaration by that person that he or she verified the identity of the Applicant using the format set forth at \\[28 U.S.C. 1746\\] (declaration under penalty of perjury); or"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-30",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "  - An auditable record linking the authentication of the person performing the identification to their verification of each Applicant."
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-31",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "- Unique identifying number(s) from second form of identification of the Applicant, or a facsimile of the ID(s);"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-32",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "- The biometric of the Applicant;"
+                                            },
+                                            {
+                                                "id": "group-6b6ea29c-947f-4d87-8509-ab1c425012e3-33",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "- The date and time of the verification;"
+                                            }
+                                        ],
+                                        "groups": [
+                                            {
+                                                "id": "control-6b6ea29c-947f-4d87-8509-ab1c425012e3",
+                                                "title": "Authentication of Human Subscribers: Group for Normative Statements",
+                                                "controls": [
+                                                    {
+                                                        "id": "ctrl-b8b16e26-02c5-4b7d-abe5-4b2b154d9b7a",
+                                                        "title": "Authentication of Human Subscribers: Normative Statements",
+                                                        "parts": [
+                                                            {
+                                                                "id": "stmt-b8b16e26-02c5-4b7d-abe5-4b2b154d9b7a-1",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "Procedures used by agencies to authenticate the identity of their own personnel and affiliates may be more stringent than that set forth below. When this is the case, the agency procedures for authentication of the identity of personnel must apply in addition to the requirements in this section."
+                                                            },
+                                                            {
+                                                                "id": "stmt-b8b16e26-02c5-4b7d-abe5-4b2b154d9b7a-2",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "The RA must ensure that the Applicant's identity information is verified."
+                                                            },
+                                                            {
+                                                                "id": "stmt-b8b16e26-02c5-4b7d-abe5-4b2b154d9b7a-3",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "At a minimum, procedures for employees must include the following steps:"
+                                                            },
+                                                            {
+                                                                "id": "stmt-b8b16e26-02c5-4b7d-abe5-4b2b154d9b7a-4",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "    3.  The credential presented in step 3a above must be verified by the RA for currency and legitimacy (e.g., the agency ID is verified as valid). Typically, this is accomplished by querying a database maintained by the organization that issued the credential, but other equivalent methods may be used."
+                                                            },
+                                                            {
+                                                                "id": "stmt-b8b16e26-02c5-4b7d-abe5-4b2b154d9b7a-5",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "For contractors and other affiliated personnel, the procedures must include the following steps:"
+                                                            },
+                                                            {
+                                                                "id": "stmt-b8b16e26-02c5-4b7d-abe5-4b2b154d9b7a-6",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "    3.  The credential presented in step 3a above must be verified by the RA for currency and legitimacy (e.g., the agency ID is verified as valid). Typically, this is accomplished by querying official records maintained by the organization that issued the credential."
+                                                            },
+                                                            {
+                                                                "id": "stmt-b8b16e26-02c5-4b7d-abe5-4b2b154d9b7a-7",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "In the event an Applicant is denied a credential based on the results of the identity proofing process, the sponsoring agency must provide a mechanism for appeal or redress of the decision."
+                                                            },
+                                                            {
+                                                                "id": "stmt-b8b16e26-02c5-4b7d-abe5-4b2b154d9b7a-8",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "Additionally, the RA must record the process that was followed for issuance of each certificate. The process documentation and authentication requirements must include the following:"
+                                                            },
+                                                            {
+                                                                "id": "stmt-b8b16e26-02c5-4b7d-abe5-4b2b154d9b7a-9",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "For certificates issued under id-fpki-common-authentication, id-fpki-common-pivi-authentication, id-fpki-common-pivi-cardAuth, and id-fpki-common-cardAuth, identity must be verified in accordance with the requirements specified for issuing PIV in Section 2.7 of \\[FIPS 201\\]."
+                                                            },
+                                                            {
+                                                                "id": "stmt-b8b16e26-02c5-4b7d-abe5-4b2b154d9b7a-10",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "At id-fpki-common-High, id-fpki-common-authentication, and id-fpki-common-pivi-authentication, the Applicant must appear at the RA in person or via supervised remote."
+                                                            },
+                                                            {
+                                                                "id": "stmt-b8b16e26-02c5-4b7d-abe5-4b2b154d9b7a-11",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "For certificates issued under id-fpki-common-derived-pivAuth-hardware and id-fpki-common-derived-pivAuth, identity must be verified in accordance with the requirements specified for issuing derived credentials in \\[SP 800-157\\]. At id-fpki-common-derived-pivAuth-hardware, the Applicant must appear at the RA in person or via supervised remote."
+                                                            },
+                                                            {
+                                                                "id": "stmt-b8b16e26-02c5-4b7d-abe5-4b2b154d9b7a-12",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "The RA or CA must:"
+                                                            },
+                                                            {
+                                                                "id": "stmt-b8b16e26-02c5-4b7d-abe5-4b2b154d9b7a-13",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "Seven days after issuing the derived credential, the CA should recheck the revocation status of the PIV Authentication certificate. This step can detect use of a compromised PIV credential to obtain a derived credential."
+                                                            },
+                                                            {
+                                                                "id": "stmt-b8b16e26-02c5-4b7d-abe5-4b2b154d9b7a-14",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "For certificates issued under id-fpki-common-derived-pivAuth-hardware, the Applicant must appear in person or via supervised remote to present the PIV credential and perform the PKI-AUTH authentication mechanism. The RA must perform a one-to-one comparison of the Applicant against biometric data stored on the PIV credential, in accordance with \\[SP 800-76\\], and must record and maintain the biometric sample used to validate the Applicant."
+                                                            },
+                                                            {
+                                                                "id": "stmt-b8b16e26-02c5-4b7d-abe5-4b2b154d9b7a-15",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "1)  The Applicant must present a government-issued form of identification (e.g., a passport or driver's license) in addition to the PIV credential, and"
+                                                            },
+                                                            {
+                                                                "id": "stmt-b8b16e26-02c5-4b7d-abe5-4b2b154d9b7a-16",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "2)  The RA must examine the presented credentials for biometric data that can be linked to the Applicant (e.g., a photograph on the credential itself or a securely linked photograph of the Applicant), and"
+                                                            },
+                                                            {
+                                                                "id": "stmt-b8b16e26-02c5-4b7d-abe5-4b2b154d9b7a-17",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "The process documentation and authentication requirements must include the following:"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "id": "group-da2dbff3-2b22-411e-9171-be90c82d4292",
+                                        "title": "Authentication of Devices",
+                                        "parts": [
+                                            {
+                                                "id": "group-da2dbff3-2b22-411e-9171-be90c82d4292-0",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "- Equipment identification (e.g., serial number) or service name (e.g., DNS name) or unique software application name"
+                                            },
+                                            {
+                                                "id": "group-da2dbff3-2b22-411e-9171-be90c82d4292-1",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "- Equipment or software application public keys"
+                                            },
+                                            {
+                                                "id": "group-da2dbff3-2b22-411e-9171-be90c82d4292-2",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "- Equipment or software application authorizations and attributes (if any are to be included in the certificate)"
+                                            },
+                                            {
+                                                "id": "group-da2dbff3-2b22-411e-9171-be90c82d4292-3",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "- Contact information to enable the CA or RA to communicate with the sponsor when required."
+                                            },
+                                            {
+                                                "id": "group-da2dbff3-2b22-411e-9171-be90c82d4292-4",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "- Verification of digitally signed messages sent from the sponsor using a certificate issued under this policy; or"
+                                            },
+                                            {
+                                                "id": "group-da2dbff3-2b22-411e-9171-be90c82d4292-5",
+                                                "name": "overview",
+                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                "prose": "- In-person or supervised remote registration by the sponsor, with the identity of the sponsor confirmed in accordance with the requirements of Section 3.2.3.1."
+                                            }
+                                        ],
+                                        "groups": [
+                                            {
+                                                "id": "control-da2dbff3-2b22-411e-9171-be90c82d4292",
+                                                "title": "Authentication of Devices: Group for Normative Statements",
+                                                "controls": [
+                                                    {
+                                                        "id": "ctrl-39e139db-2546-4fc1-835b-6f7206028e45",
+                                                        "title": "Authentication of Devices: Normative Statements",
+                                                        "parts": [
+                                                            {
+                                                                "id": "stmt-39e139db-2546-4fc1-835b-6f7206028e45-1",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "Some computing and communications devices (routers, firewalls, servers, etc.) and software applications will be named as certificate subjects. In such cases, the device must have a human sponsor who is affiliated with the agency under which the certificate is being issued. The sponsor is responsible for providing the following registration information:"
+                                                            },
+                                                            {
+                                                                "id": "stmt-39e139db-2546-4fc1-835b-6f7206028e45-2",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "These certificates must be issued only to authorized devices under the subscribing organization's control. In the case a human sponsor is changed, the new sponsor must review the status of each device under his/her sponsorship to ensure it is still authorized to receive certificates. The CPS must describe procedures to ensure that certificate accountability is maintained. See Section 9.6.3 for Subscriber responsibilities."
+                                                            },
+                                                            {
+                                                                "id": "stmt-39e139db-2546-4fc1-835b-6f7206028e45-3",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "Before issuing a certificate with a wildcard character (\\*) in a common name or subject alternative name of type dNSName, the CA must establish and follow a documented procedure to ensure that the wildcard does not fall immediately to the left of an agency or organization name, but is qualified down to a unique application, server, or server farm under control of the sponsor's organization (see Section 3.1.1). The device sponsor must demonstrate that the domain name requested is entirely within the namespace to be covered by the wildcard certificate."
+                                                            },
+                                                            {
+                                                                "id": "stmt-39e139db-2546-4fc1-835b-6f7206028e45-4",
+                                                                "name": "statement",
+                                                                "ns": "http://csrc.nist.gov/ns/oscal",
+                                                                "prose": "The identity of the sponsor must be authenticated by:"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
